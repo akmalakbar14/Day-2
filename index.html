@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- This is figtree font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <style>
+      body{
+        font-family: Figtree, Arial, sans-serif;
+        background-color: hsl(47, 88%, 63%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* text-align: center; */
+        margin: 0;
+        padding: 0;
+      }
+      .container{
+        width: 350px;
+        background-color: white;
+        border-radius: 20px;
+        border: 1px solid hsl(0, 0%, 7%);
+        padding: 10px;
+        box-shadow: 10px 10px 0 rgba(0, 0, 0, 1);
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+      }
+      .illustration{
+        width: 330px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .card-section{
+        margin-top: 10px;
+        background-color: hsl(47, 88%, 63%);
+        padding: 8px;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 3px;
+        margin-left: 10px;
+      }
+      .card-date{
+        font-size: 12px;
+        margin-left: 10px;
+      }
+      .card-title{
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      .card-description{
+        font-size: 16px;
+        color:hsl(0, 0%, 42%);
+        margin-left: 10px;
+      }
+      .author-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10px;
+      }
+      .author-picture{
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+      }
+      .author-name{
+        font-size: 14px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="assets/images/illustration-article.svg"
+        alt="ilustration"
+        class="illustration"
+      />
+      <button class="card-section">Learning</button>
+      <p class="card-date">Published 21 Dec 2023</p>
+      <h1 class="card-title">HTML & CSS foundations</h1>
+      <p class="card-description">
+        The languanges are the backbone of every website, defining structure,
+        content, and presentation
+      </p>
+      <div class="author-container">
+        <img
+          src="assets/images/image-avatar.webp"
+          alt="author-profile-picture"
+          class="author-picture"
+        />
+        <p class="author-name">Greg Hooper</p>
+      </div>
+    </div>
+  </body>
+</html>

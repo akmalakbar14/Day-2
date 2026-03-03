@@ -13,14 +13,17 @@
     />
 
     <!-- This is figtree font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Blog preview card</title>
 
     <style>
-      body{
+      body {
         font-family: Figtree, Arial, sans-serif;
         background-color: hsl(47, 88%, 63%);
         display: flex;
@@ -31,24 +34,29 @@
         margin: 0;
         padding: 0;
       }
-      .container{
+      .container {
         width: 350px;
         background-color: white;
         border-radius: 20px;
         border: 1px solid hsl(0, 0%, 7%);
         padding: 10px;
         box-shadow: 10px 10px 0 rgba(0, 0, 0, 1);
+        transition: all 0.3s ease;
         /* display: flex;
         flex-direction: column;
         align-items: center; */
       }
-      .illustration{
+      .container:hover{
+        transform: scale(1.05);
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+      }
+      .illustration {
         width: 330px;
         border-radius: 10px;
         margin-top: 10px;
         margin-left: 10px;
       }
-      .card-section{
+      .card-section {
         margin-top: 10px;
         background-color: hsl(47, 88%, 63%);
         padding: 8px;
@@ -58,31 +66,31 @@
         border-radius: 3px;
         margin-left: 10px;
       }
-      .card-date{
+      .card-date {
         font-size: 12px;
         margin-left: 10px;
       }
-      .card-title{
+      .card-title {
         font-size: 20px;
         margin-left: 10px;
       }
-      .card-description{
+      .card-description {
         font-size: 16px;
-        color:hsl(0, 0%, 42%);
+        color: hsl(0, 0%, 42%);
         margin-left: 10px;
       }
-      .author-container{
+      .author-container {
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-left: 10px;
       }
-      .author-picture{
+      .author-picture {
         width: 30px;
         height: 30px;
         margin-right: 5px;
       }
-      .author-name{
+      .author-name {
         font-size: 14px;
         font-weight: bold;
       }
